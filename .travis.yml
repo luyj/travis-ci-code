@@ -22,7 +22,7 @@ script:
   - bash Linux_exp0x04_code/ImageProcess.sh -h
   - bash Linux_exp0x04_code/WebLog.sh -h
   - bash Linux_exp0x04_code/WorldCupPlayerInfo.sh -h
-  - bash Linux_exp0x04_codeImageProcess.sh -f test.jpg.jpg -cq 20
+  - bash Linux_exp0x04_code/ImageProcess.sh -f test.jpg.jpg -cq 20
   - bash Linux_exp0x04_code/ImageProcess.sh -f test.jpg.jpg -cs 50
   - bash Linux_exp0x04_code/WebLog.sh -sh
   - bash Linux_exp0x04_code/WebLog.sh -si
