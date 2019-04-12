@@ -72,7 +72,7 @@ function imageCompression
 function imageResize
 {
     fname="$1"
-    precent=$(("$2"))
+    precent=$(($2))
     fullfile=($(dealFileName "$fname"))
     if [[ ! -z "$3" ]];
     then
