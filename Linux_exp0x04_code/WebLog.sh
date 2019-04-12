@@ -84,10 +84,10 @@ while [ "$1" != "" ];do
         ;;
     h | --help )
         usage
-        exit;;
+        exit 0;;
     * )
         usage
-        exit 1
+        exit 0;;
     esac
     shift
 done
