@@ -82,8 +82,8 @@ function imageResize
     fi
     width=$(identify -format "%w" "$fname")
     heigth=$(identify -format "%h" "$fname")
-    r_width=$(("$width" * "$precent" / 100))
-    r_heigth=$(("$heigth" * "$precent" /100))
+    r_width=$(($width * $precent / 100))
+    r_heigth=$(($heigth * $precent /100))
 	if hash convert 2>/dev/null;
 	then
     	convert "$fname" -resize "$r_width"x"$r_heigth" "$tname"
