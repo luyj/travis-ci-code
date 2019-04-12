@@ -15,21 +15,21 @@ before_install:
     - sudo apt install 
 
 script:
-  - bash test.sh
-  - bash ImageProcess.sh
-  - bash WebLog.sh
-  - bash WorldCupPlayerInfo.sh
-  - bash ImageProcess.sh -h
-  - bash WebLog.sh -h
-  - bash WorldCupPlayerInfo.sh -h
-  - bash ImageProcess.sh -cq 20
-  - bash ImageProcess.sh -cs 50
-  - bash WorldCupPlayerInfo.sh -sh
-  - bash WorldCupPlayerInfo.sh -si
-  - bash WorldCupPlayerInfo.sh -sc
-  - bash WorldCupPlayerInfo.sh -u
-  - bash WorldCupPlayerInfo.sh -uh "uplherc.upl.com"
-  - bash WorldCupPlayerInfo.sh -fs
+  - bash Linux_exp0x04/Linux_exp0x04_code/test.sh
+  - bash Linux_exp0x04/Linux_exp0x04_code/ImageProcess.sh
+  - bash Linux_exp0x04/Linux_exp0x04_code/WebLog.sh
+  - bash Linux_exp0x04/Linux_exp0x04_code/WorldCupPlayerInfo.sh
+  - bash Linux_exp0x04/Linux_exp0x04_code/ImageProcess.sh -h
+  - bash Linux_exp0x04/Linux_exp0x04_code/WebLog.sh -h
+  - bash Linux_exp0x04/Linux_exp0x04_code/WorldCupPlayerInfo.sh -h
+  - bash Linux_exp0x04/Linux_exp0x04_code/ImageProcess.sh -cq 20
+  - bash Linux_exp0x04/Linux_exp0x04_code/ImageProcess.sh -cs 50
+  - bash Linux_exp0x04/Linux_exp0x04_code/WorldCupPlayerInfo.sh -sh
+  - bash Linux_exp0x04/Linux_exp0x04_code/WorldCupPlayerInfo.sh -si
+  - bash Linux_exp0x04/Linux_exp0x04_code/WorldCupPlayerInfo.sh -sc
+  - bash Linux_exp0x04/Linux_exp0x04_code/WorldCupPlayerInfo.sh -u
+  - bash Linux_exp0x04/Linux_exp0x04_code/WorldCupPlayerInfo.sh -uh "uplherc.upl.com"
+  - bash Linux_exp0x04/Linux_exp0x04_code/WorldCupPlayerInfo.sh -fs
 after_script:
   - /usr/bin/shellcheck test.sh
 
