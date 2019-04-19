@@ -17,19 +17,31 @@ before_install:
 script:
   - bash test.sh
   - bash Linux_exp0x04_code/ImageProcess.sh
-  - bash Linux_exp0x04_code/WebLog.sh
-  - bash Linux_exp0x04_code/WorldCupPlayerInfo.sh
   - bash Linux_exp0x04_code/ImageProcess.sh -h
-  - bash Linux_exp0x04_code/WebLog.sh -h
-  - bash Linux_exp0x04_code/WorldCupPlayerInfo.sh -h
   - bash Linux_exp0x04_code/ImageProcess.sh -f test.jpg.jpg -cq 20
   - bash Linux_exp0x04_code/ImageProcess.sh -f test.jpg.jpg -cs 50
+  - bash Linux_exp0x04_code/ImageProcess.sh -f test.jpg.jpg -ctj
+  - bash Linux_exp0x04_code/ImageProcess.sh -f test.jpg.jpg -tw testwatermark
+  - bash Linux_exp0x04_code/ImageProcess.sh -f test.jpg.jpg -sr _suf
+  - bash Linux_exp0x04_code/ImageProcess.sh -f test.jpg.jpg -pr _pre
+  - bash Linux_exp0x04_code/ImageProcess.sh bp
+
+  - bash Linux_exp0x04_code/WorldCupPlayerInfo.sh -h
+
+  
+  - bash Linux_exp0x04_code/WebLog.sh
+  - bash Linux_exp0x04_code/WebLog.sh -h
   - bash Linux_exp0x04_code/WebLog.sh -sh
   - bash Linux_exp0x04_code/WebLog.sh -si
   - bash Linux_exp0x04_code/WebLog.sh -sc
   - bash Linux_exp0x04_code/WebLog.sh -u
   - bash Linux_exp0x04_code/WebLog.sh -uh "uplherc.upl.com"
   - bash Linux_exp0x04_code/WebLog.sh -fs
+  - bash Linux_exp0x04_code/WorldCupPlayerInfo.sh
+
+  
+
+
 after_script:
   - /usr/bin/shellcheck test.sh
 
